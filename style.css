@@ -64,3 +64,33 @@ header img {
 .img {
   width: 200%;
 }
+
+.absolute {
+  position: absolute;
+  width: 80%;
+  left: 30px;
+  bottom: 60px;
+  line-height: 1.7rem;
+}
+
+#main-background {
+  position: relative;
+}
+
+.card {
+  display: flex;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.card-flex {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  line-height: 0.1rem;
+}
