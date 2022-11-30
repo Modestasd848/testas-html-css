@@ -7,12 +7,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
   margin: 0 auto;
 }
 
 header img {
-  width: 30%;
+  padding-left: 10px;
+  width: 40%;
 }
 
 #hamburger-menu {
@@ -53,44 +53,131 @@ header img {
 /* MAIN CONTENT */
 
 .launching-content {
-  display: flex;
-  padding: 10px;
+  margin-top: 70px;
+}
+
+.text-purple {
+  margin: 1px;
+  color: rgb(253, 75, 185);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+}
+
+.flex-one {
+  width: 50%;
+  height: 40vh;
+  margin-left: 10px;
+}
+
+.flex-one p {
+  width: 97%;
+}
+
+.font-size {
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .launching-content img {
-  width: 200%;
+  position: relative;
+  bottom: 340px;
+  left: 145px;
+  width: 140%;
 }
 
-.img {
-  width: 200%;
+button {
+  padding: 20px 40px;
+  border-radius: 40px;
+  font-weight: 700;
 }
 
 .absolute {
   position: absolute;
-  width: 80%;
-  left: 30px;
-  bottom: 60px;
+  width: 60%;
+  left: 20px;
+  bottom: 150px;
   line-height: 1.7rem;
 }
 
-#main-background {
+.free-nft {
   position: relative;
+}
+
+/* #background {
+  margin-left: -100px;
+  width: 350%;
+} */
+
+.companies-logo {
+  display: flex;
+  width: 80%;
+  margin-left: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.companies-logo img {
+  width: 60%;
+  padding-top: 15px;
+}
+
+.boomerang img {
+  width: 130px;
+  overflow: hidden;
+}
+
+.le-super {
+  width: 60%;
 }
 
 .card {
   display: flex;
+  gap: 2rem;
 }
 
 .card-container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 60%;
 }
 
 .card-flex {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   justify-content: space-between;
-  line-height: 0.1rem;
+  align-items: baseline;
+}
+
+h6,
+h4,
+.text-gray {
+  margin: 4px;
+}
+
+.text-gray {
+  color: #777777;
+}
+
+.gold-text {
+  color: #ff8139;
+}
+
+.footer-img {
+  position: relative;
+  bottom: 40px;
+  left: 30px;
+  width: 30%;
+}
+
+.flex-two {
+  margin-top: 300px;
+  width: 50%;
+}
+
+.footer-h1 {
+  font-size: 3rem;
 }
