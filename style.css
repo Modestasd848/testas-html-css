@@ -3,7 +3,6 @@ body {
   margin-left: 15px;
 }
 
-/* HEADER-CONTENT */
 header {
   display: flex;
   align-items: center;
@@ -22,11 +21,11 @@ header img {
   color: #777777;
 }
 
-#sidebar-menu {
+#nav-menu,
+.opendoor-logo,
+.copyright-p {
   display: none;
 }
-
-/* MAIN CONTENT */
 
 a {
   font-weight: 700;
@@ -37,7 +36,7 @@ a {
   margin-top: 70px;
 }
 
-.flex-one {
+.main-left-content {
   position: relative;
   width: 85%;
   height: 40vh;
@@ -71,14 +70,23 @@ a {
   width: 120%;
 }
 
-.button {
-  padding: 20px 40px;
-  border-radius: 40px;
+button.button {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-size: 1rem;
   font-weight: 700;
-  border: 1px solid red;
+  color: black;
+  padding: 1rem 2.5rem;
+  box-shadow: 0 0 6px 0 rgba(250, 103, 18, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(201, 76, 4, 0), rgba(189, 86, 1, 0)),
+    linear-gradient(100deg, rgb(223, 24, 41), rgb(189, 155, 3));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
 }
 
-.absolute {
+.position-absolute {
   position: absolute;
   width: 85%;
   left: 20px;
@@ -105,17 +113,13 @@ a {
   align-items: baseline;
 }
 
-.openddoor {
-  display: none;
-}
-
 .companies-logo img {
   padding-top: 15px;
 }
 
 .wrap {
   overflow: hidden;
-  max-width: 43%;
+  max-width: 8.5rem;
 }
 
 .nft-section {
@@ -235,9 +239,13 @@ footer {
   color: #5c5c5c;
 }
 
+.copyright {
+  margin-left: 15px;
+}
+
 @media screen and (min-width: 768px) {
   body {
-    width: 90%;
+    max-width: 90%;
     padding-top: 40px;
     margin: auto;
   }
@@ -250,24 +258,27 @@ footer {
     display: none;
   }
 
-  #sidebar-menu {
+  #nav-menu {
     display: inline-block;
   }
 
-  #sidebar-menu a {
+  #nav-menu a {
     text-decoration: none;
     padding-left: 15px;
     font-weight: 300;
   }
 
-  #sidebar-menu a:last-child {
+  #nav-menu a:last-child {
     color: rgb(253, 75, 185);
   }
 
   .launching-content {
-    display: flex;
     height: 55vh;
     margin-top: 120px;
+  }
+
+  .main-left-content {
+    height: 60vh;
   }
 
   .font-size {
@@ -278,14 +289,9 @@ footer {
 
   .launching-content img {
     position: absolute;
-    top: 0px;
-    left: 1000px;
-    width: 40%;
-  }
-
-  .flex-one {
-    position: relative;
-    height: 50vh;
+    bottom: 0px;
+    left: 950px;
+    max-width: 50%;
   }
 
   #background {
@@ -293,7 +299,7 @@ footer {
     width: 100%;
   }
 
-  .openddoor {
+  .opendoor-logo {
     display: block;
   }
 
@@ -357,5 +363,15 @@ footer {
 
   .footer-flex-item {
     flex-wrap: nowrap;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    color: #777777;
+  }
+
+  .copyright-p {
+    display: block;
   }
 }

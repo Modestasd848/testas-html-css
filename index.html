@@ -8,6 +8,13 @@
       src="https://kit.fontawesome.com/4258465b7e.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>nftlanding</title>
   </head>
@@ -15,7 +22,7 @@
     <header>
       <img src="./assets/logo.svg" alt="header-logo" />
       <i class="fa-solid fa-bars"></i>
-      <nav id="sidebar-menu">
+      <nav id="nav-menu">
         <a href="#">Features</a>
         <a href="#">About</a>
         <a href="#">Launch</a>
@@ -24,16 +31,16 @@
     </header>
     <main>
       <section class="launching-content">
-        <div class="flex-one">
+        <article class="main-left-content">
           <p class="text-purple">launching soon</p>
           <h1 class="font-size">An NFT like no other</h1>
           <p class="font-width">
             Don't miss out on the release of our new NFT. Sign up below to
             receive updates when we go live
           </p>
-          <button class="button" type="button">Sign up</button>
+          <button class="button">Sign up</button>
           <img src="./assets/graphic.png" alt="pink-form" />
-        </div>
+        </article>
       </section>
       <section class="free-nft">
         <img
@@ -41,7 +48,7 @@
           src="./assets/background.svg"
           alt="background-img"
         />
-        <div class="absolute">
+        <div class="position-absolute">
           <h1 class="name-size">Free NFT for early birds</h1>
           <p>Sign up today and you'll get a free NFT when we launch</p>
         </div>
@@ -49,96 +56,92 @@
           <div class="wrap">
             <img src="./assets/companies/1.svg" alt="boomerang-logo" />
           </div>
-          <div class="blimp">
-            <img src="./assets/companies/2.svg" alt="Blimp-logo" />
-          </div>
-          <div class="qrco">
-            <img src="./assets/companies/3.svg" alt="qrco-logo" />
-          </div>
-          <div class="openddoor">
-            <img src="./assets/companies/4.svg" alt="" />
-          </div>
-          <div class="droplet">
-            <img src="./assets/companies/5.svg" alt="Droplet-logo" />
-          </div>
+          <img src="./assets/companies/2.svg" alt="Blimp-logo" />
+          <img src="./assets/companies/3.svg" alt="qrco-logo" />
+          <img
+            class="opendoor-logo"
+            src="./assets/companies/4.svg"
+            alt="opendoor-logo"
+          />
+          <img src="./assets/companies/5.svg" alt="Droplet-logo" />
         </div>
       </section>
       <section class="nft-section">
-        <div class="le-super">
+        <article class="le-super">
           <h1 class="name-size">LE Super Rare Auction</h1>
           <p class="font-width">
             We have released four limited edition NFTs early which can be bid on
             via <a href="#">OpenSea</a>.
           </p>
-        </div>
+        </article>
         <div class="card">
           <div class="card-container">
             <img src="./assets/ntfs/ntf-1.svg" alt="purple-man" />
-            <div class="card-flex">
+            <article class="card-flex">
               <h6><span class="gold-text">GLOOP SERIES</span></h6>
-              <h6>TOP BID</h6>
-            </div>
-            <div class="card-flex">
+              <h6 class="text-gray">TOP BID</h6>
+            </article>
+            <article class="card-flex">
               <h4>Purple Man</h4>
               <h4>
                 <img src="./assets/eth.svg" alt="etherium-logo" /> 2.99 ETH
               </h4>
-            </div>
-            <div class="card-flex">
+            </article>
+            <article class="card-flex">
               <p class="text-gray">#12983</p>
               <p class="text-gray">1 day left</p>
-            </div>
+            </article>
           </div>
           <div class="card-container">
             <img src="./assets/ntfs/nft-2.svg" alt="nfts-girl" />
-            <div class="card-flex">
+            <article class="card-flex">
               <h6><span class="gold-text">GLOOP SERIES</span></h6>
-              <h6>TOP BID</h6>
-            </div>
-            <div class="card-flex">
+              <h6 class="text-gray">TOP BID</h6>
+            </article>
+            <article class="card-flex">
               <h4>Beige</h4>
               <h4>
                 <img src="./assets/eth.svg" alt="etherium-logo" /> 2.99 ETH
               </h4>
-            </div>
-            <div class="card-flex">
+            </article>
+            <article class="card-flex">
               <p class="text-gray">#12983</p>
               <p class="text-gray">1 day left</p>
-            </div>
+            </article>
           </div>
           <div class="card-container">
             <img src="./assets/ntfs/ntf-3.svg" alt="nfts-girl" />
-            <div class="card-flex">
+            <article class="card-flex">
               <h6><span class="gold-text">GLOOP SERIES</span></h6>
-              <h6>TOP BID</h6>
-            </div>
-            <div class="card-flex">
+              <h6 class="text-gray">TOP BID</h6>
+            </article>
+            <article class="card-flex">
               <h4>Red Man</h4>
               <h4>
                 <img src="./assets/eth.svg" alt="etherium-logo" /> 2.99 ETH
               </h4>
-            </div>
-            <div class="card-flex">
+            </article>
+            <article class="card-flex">
               <p class="text-gray">#12983</p>
               <p class="text-gray">1 day left</p>
-            </div>
+            </article>
           </div>
           <div class="card-container">
             <img src="./assets/ntfs/ntf-4.svg" alt="nfts-girl" />
-            <div class="card-flex">
+            <article class="card-flex">
               <h6><span class="gold-text">GLOOP SERIES</span></h6>
               <h6>TOP BID</h6>
-            </div>
+            </article>
             <div class="card-flex">
               <h4>Green</h4>
               <h4>
                 <img src="./assets/eth.svg" alt="etherium-logo" /> 2.99 ETH
               </h4>
             </div>
-            <div class="card-flex">
+            <a class="card-flex">
               <p class="text-gray">#12983</p>
               <p class="text-gray">1 day left</p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -162,47 +165,51 @@
       <div>
         <img src="./assets/logo.svg" alt="footer-logo" />
         <p>Exclusive NFT Collection</p>
-      <div class="font-awesome">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-tiktok"></i>
-      </div>
+        <div class="font-awesome">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
       </div>
       <div>
-      <div class="footer-flex-item">
-        <div class="about nav">
-          <h5>ABOUT</h5>
-          <ul>
-            <li>About</li>
-            <li>Terms</li>
-            <li>Legal</li>
-          </ul>
-        </div>
-        <div class="nft nav">
-          <h5>NFT</h5>
-          <ul>
-            <li>OpenSea</li>
-            <li>Maker</li>
-            <li>Learn</li>
-          </ul>
-        </div>
-        <div class="contact nav">
-          <h5>CONTACT</h5>
-          <ul>
-            <li>Press</li>
-            <li>Support</li>
-          </ul>
-        </div>
-        <div class="social nav">
-          <h5>SOCIAL</h5>
-          <ul>
-            <li>Twitter</li>
-            <li>Instagram</li>
-          </ul>
+        <div class="footer-flex-item">
+          <div class="about nav">
+            <h5>ABOUT</h5>
+            <ul>
+              <li>About</li>
+              <li>Terms</li>
+              <li>Legal</li>
+            </ul>
+          </div>
+          <div class="nft nav">
+            <h5>NFT</h5>
+            <ul>
+              <li>OpenSea</li>
+              <li>Maker</li>
+              <li>Learn</li>
+            </ul>
+          </div>
+          <div class="contact nav">
+            <h5>CONTACT</h5>
+            <ul>
+              <li>Press</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div class="social nav">
+            <h5>SOCIAL</h5>
+            <ul>
+              <li>Twitter</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <p>C Copyright 2022 NFTlanding</p>
     </footer>
+    <article class="copyright">
+      <p>© Copyright 2022 NFTlanding</p>
+      <p class="copyright-p">Launching August 2022</p>
+    </article>
   </body>
 </html>
