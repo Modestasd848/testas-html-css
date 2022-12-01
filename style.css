@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 /* HEADER-CONTENT */
@@ -16,122 +16,115 @@ header img {
   width: 40%;
 }
 
-#hamburger-menu {
-  width: 20px;
-  height: 20px;
-  display: block;
-  border: none;
-  padding: 0px;
-  margin: 20px;
-  border-radius: 5px;
-  background: linear-gradient(
-    to bottom,
-    #999999,
-    #999999 20%,
-    white 20%,
-    white 40%,
-    #999999 40%,
-    #999999 60%,
-    white 60%,
-    white 80%,
-    #999999 80%,
-    #999999 100%
-  );
+.fa-solid {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #777777;
 }
 
-#hamburger-menu #sidebar-menu {
-  /* visibilty: hidden; */
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 200px;
-  height: 100%;
-  background-color: #3d0e61;
-  padding: 0px 10px;
-  box-sizing: border-box;
+#sidebar-menu {
+  display: none;
 }
 
 /* MAIN CONTENT */
 
+a {
+  font-weight: 700;
+  color: #777777;
+}
+
 .launching-content {
   margin-top: 70px;
+}
+
+.flex-one {
+  position: relative;
+  width: 85%;
+  height: 40vh;
+}
+
+.font-width {
+  width: 72.5%;
+  line-height: 1.5rem;
+  font-size: larger;
 }
 
 .text-purple {
   margin: 1px;
   color: rgb(253, 75, 185);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 900;
   font-size: small;
 }
 
-.flex-one {
-  width: 50%;
-  height: 40vh;
-  margin-left: 10px;
-}
-
-.flex-one p {
-  width: 97%;
-}
-
 .font-size {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 900;
+  margin: 6px;
+  letter-spacing: 0.1px;
 }
 
 .launching-content img {
   position: relative;
-  bottom: 340px;
-  left: 145px;
-  width: 140%;
+  bottom: 420px;
+  left: 195px;
+  width: 120%;
 }
 
-button {
+.button {
   padding: 20px 40px;
   border-radius: 40px;
   font-weight: 700;
+  border: 1px solid red;
 }
 
 .absolute {
   position: absolute;
-  width: 60%;
+  width: 85%;
   left: 20px;
-  bottom: 150px;
-  line-height: 1.7rem;
+  bottom: 180px;
+  line-height: 2rem;
+  font-size: 1.3rem;
 }
 
 .free-nft {
   position: relative;
+  margin-top: 70px;
 }
 
-/* #background {
-  margin-left: -100px;
-  width: 350%;
-} */
+#background {
+  margin-left: -300px;
+}
 
 .companies-logo {
   display: flex;
-  width: 80%;
-  margin-left: 12px;
+  width: 90%;
   flex-wrap: wrap;
   margin-top: 30px;
   justify-content: space-between;
   align-items: baseline;
 }
 
+.openddoor {
+  display: none;
+}
+
 .companies-logo img {
-  width: 60%;
   padding-top: 15px;
 }
 
-.boomerang img {
-  width: 130px;
+.wrap {
   overflow: hidden;
+  max-width: 43%;
 }
 
-.le-super {
-  width: 60%;
+.nft-section {
+  margin-top: 60px;
+}
+
+.name-size {
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 .card {
@@ -142,7 +135,6 @@ button {
 .card-container {
   display: flex;
   flex-direction: column;
-  width: 60%;
   background-color: #eeeeee;
   border-radius: 10px;
   padding-bottom: 15px;
@@ -170,29 +162,47 @@ h4,
   color: #ff8139;
 }
 
+.launching-content-2 {
+  height: 20vh;
+}
+
 .launching-content-2 img {
   position: relative;
-  bottom: 300px;
-  left: 160px;
-  width: 80%;
+  bottom: 320px;
+  left: 200px;
+  width: 70%;
 }
 
 .flex-two {
+  position: relative;
   margin-top: 100px;
-  width: 50%;
+  margin-bottom: 42px;
+  width: 60%;
   height: 55vh;
 }
 
+.line-through {
+  border-bottom: 1px solid rgb(177, 175, 175);
+  width: 170%;
+}
+
+.line-through:first-child {
+  margin-bottom: 80px;
+}
+
 .footer-h1 {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
 
 .footer-p {
-  width: 75%;
+  width: 70%;
+  line-height: 1.5rem;
 }
 
 footer {
+  display: flex;
+  margin-top: 400px;
   padding: 20px;
 }
 
@@ -218,4 +228,126 @@ ul {
   width: 60%;
   gap: 3rem;
   color: #5c5c5c;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 90%;
+    padding-top: 40px;
+    margin: auto;
+  }
+
+  header img {
+    width: 10%;
+  }
+
+  .fa-solid {
+    display: none;
+  }
+
+  #sidebar-menu {
+    display: inline-block;
+  }
+
+  #sidebar-menu a {
+    text-decoration: none;
+    padding-left: 15px;
+    font-weight: 300;
+  }
+
+  #sidebar-menu a:last-child {
+    color: rgb(253, 75, 185);
+  }
+
+  .launching-content {
+    height: 55vh;
+    margin-top: 120px;
+  }
+
+  .font-size {
+    width: 50%;
+    line-height: 7rem;
+    font-size: 6rem;
+  }
+
+  .launching-content img {
+    position: absolute;
+    top: 20px;
+    left: 950px;
+    width: 50%;
+  }
+
+  .flex-one {
+    height: 50vh;
+  }
+
+  #background {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .openddoor {
+    display: block;
+  }
+
+  .companies-logo {
+    width: 100%;
+  }
+
+  .font-width {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  .launching-content-2 img {
+    position: absolute;
+    top: 33px;
+    left: 900px;
+    width: 20%;
+  }
+
+  .footer-h1 {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .footer-p {
+    width: 45%;
+  }
+
+  .flex-two {
+    margin-top: 100px;
+    height: 47vh;
+  }
+
+  .line-through {
+    margin-bottom: 100px;
+    display: block;
+    border-bottom: 1px solid rgb(177, 175, 175);
+    width: 170%;
+  }
+
+  .center-line {
+    display: none;
+  }
+
+  footer img {
+    width: 80%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 350px;
+  }
+
+  .footer-flex-item {
+    flex-wrap: nowrap;
+  }
 }
