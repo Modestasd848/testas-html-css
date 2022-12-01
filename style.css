@@ -135,6 +135,8 @@ button.button {
 .card {
   display: flex;
   gap: 2rem;
+  max-width: 515px;
+  overflow: scroll;
 }
 
 .card-container {
