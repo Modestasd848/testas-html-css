@@ -1,66 +1,386 @@
+/* mobile version--425px */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
 }
 
-/* HEADER-CONTENT */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
   margin: 0 auto;
 }
 
 header img {
-  width: 30%;
+  padding-left: 10px;
+  width: 40%;
 }
 
-#hamburger-menu {
-  width: 20px;
-  height: 20px;
-  display: block;
-  border: none;
-  padding: 0px;
-  margin: 20px;
-  border-radius: 5px;
-  background: linear-gradient(
-    to bottom,
-    #999999,
-    #999999 20%,
-    white 20%,
-    white 40%,
-    #999999 40%,
-    #999999 60%,
-    white 60%,
-    white 80%,
-    #999999 80%,
-    #999999 100%
-  );
+.fa-solid {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #777777;
 }
 
-#hamburger-menu #sidebar-menu {
-  /* visibilty: hidden; */
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 200px;
-  height: 100%;
-  background-color: #3d0e61;
-  padding: 0px 10px;
-  box-sizing: border-box;
+#nav-menu,
+.opendoor-logo,
+.copyright-p {
+  display: none;
 }
 
-/* MAIN CONTENT */
+a {
+  font-weight: 700;
+  color: #777777;
+}
 
 .launching-content {
-  display: flex;
-  padding: 10px;
+  margin-top: 70px;
+}
+
+.main-left-content {
+  position: relative;
+  width: 85%;
+  height: 40vh;
+}
+
+.font-width {
+  width: 72.5%;
+  line-height: 1.5rem;
+  font-size: larger;
+}
+
+.text-purple {
+  margin: 1px;
+  color: rgb(253, 75, 185);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: small;
+}
+
+.font-size {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 6px;
+  letter-spacing: 0.1px;
 }
 
 .launching-content img {
-  width: 200%;
+  position: relative;
+  bottom: 420px;
+  left: 195px;
+  width: 120%;
 }
 
-.img {
-  width: 200%;
+button.button {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  padding: 1rem 2.5rem;
+  box-shadow: 0 0 6px 0 rgba(250, 103, 18, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(201, 76, 4, 0), rgba(189, 86, 1, 0)),
+    linear-gradient(100deg, rgb(223, 24, 41), rgb(189, 155, 3));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.position-absolute {
+  position: absolute;
+  width: 85%;
+  left: 20px;
+  bottom: 180px;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+
+.free-nft {
+  position: relative;
+  margin-top: 70px;
+}
+
+#background {
+  margin-left: -300px;
+}
+
+.companies-logo {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.companies-logo img {
+  padding-top: 15px;
+}
+
+.wrap {
+  overflow: hidden;
+  max-width: 8.5rem;
+}
+
+.nft-section {
+  margin-top: 60px;
+}
+
+.name-size {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.card {
+  display: flex;
+  gap: 2rem;
+  max-width: 515px;
+  overflow: scroll;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+
+.card-flex {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h6,
+h4,
+.text-gray {
+  margin: 4px;
+}
+
+.text-gray {
+  color: #777777;
+}
+
+.gold-text {
+  color: #ff8139;
+}
+
+.launching-content-2 {
+  height: 20vh;
+}
+
+.launching-content-2 img {
+  position: relative;
+  bottom: 320px;
+  left: 200px;
+  width: 70%;
+}
+
+.flex-two {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 67px;
+  width: 60%;
+  height: 55vh;
+}
+
+.line-through {
+  border-bottom: 1px solid rgb(177, 175, 175);
+  width: 170%;
+}
+
+.line-through:first-child {
+  margin-bottom: 80px;
+}
+
+.footer-h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.footer-p {
+  width: 70%;
+  line-height: 1.5rem;
+}
+
+footer {
+  display: flex;
+  margin-top: 400px;
+  padding: 20px;
+}
+
+.font-awesome {
+  color: #999999;
+  letter-spacing: 5px;
+}
+
+li {
+  padding: 5px;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0px;
+}
+
+footer {
+  flex-direction: column;
+}
+
+.footer-flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 60%;
+  gap: 3rem;
+  color: #5c5c5c;
+}
+
+.copyright {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 90%;
+    padding-top: 40px;
+    margin: auto;
+  }
+
+  header img {
+    width: 10%;
+  }
+
+  .fa-solid {
+    display: none;
+  }
+
+  #nav-menu {
+    display: inline-block;
+  }
+
+  #nav-menu a {
+    text-decoration: none;
+    padding-left: 15px;
+    font-weight: 300;
+  }
+
+  #nav-menu a:last-child {
+    color: rgb(253, 75, 185);
+  }
+
+  .launching-content {
+    height: 55vh;
+    margin-top: 120px;
+  }
+
+  .main-left-content {
+    height: 60vh;
+  }
+
+  .font-size {
+    width: 50%;
+    line-height: 7rem;
+    font-size: 6rem;
+  }
+
+  .launching-content img {
+    position: absolute;
+    bottom: 0px;
+    left: 950px;
+    max-width: 50%;
+  }
+
+  #background {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .opendoor-logo {
+    display: block;
+  }
+
+  .companies-logo {
+    width: 100%;
+  }
+
+  .font-width {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  .launching-content-2 img {
+    position: absolute;
+    top: 33px;
+    left: 900px;
+    width: 20%;
+  }
+
+  .footer-h1 {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .footer-p {
+    width: 45%;
+  }
+
+  .flex-two {
+    margin-top: 100px;
+    height: 47vh;
+  }
+
+  .line-through {
+    margin-bottom: 100px;
+    display: block;
+    border-bottom: 1px solid rgb(177, 175, 175);
+    width: 170%;
+  }
+
+  .center-line {
+    display: none;
+  }
+
+  footer img {
+    width: 80%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 350px;
+  }
+
+  .footer-flex-item {
+    flex-wrap: nowrap;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    color: #777777;
+  }
+
+  .copyright-p {
+    display: block;
+  }
 }
