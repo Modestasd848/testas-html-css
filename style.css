@@ -124,6 +124,7 @@ a {
 
 .name-size {
   font-size: 3rem;
+  line-height: 3rem;
   font-weight: 500;
 }
 
@@ -176,7 +177,7 @@ h4,
 .flex-two {
   position: relative;
   margin-top: 100px;
-  margin-bottom: 42px;
+  margin-bottom: 67px;
   width: 60%;
   height: 55vh;
 }
@@ -220,6 +221,10 @@ ul {
   padding: 0px;
 }
 
+footer {
+  flex-direction: column;
+}
+
 .footer-flex-item {
   display: flex;
   flex-wrap: wrap;
@@ -260,6 +265,7 @@ ul {
   }
 
   .launching-content {
+    display: flex;
     height: 55vh;
     margin-top: 120px;
   }
@@ -272,12 +278,13 @@ ul {
 
   .launching-content img {
     position: absolute;
-    top: 20px;
-    left: 950px;
-    width: 50%;
+    top: 0px;
+    left: 1000px;
+    width: 40%;
   }
 
   .flex-one {
+    position: relative;
     height: 50vh;
   }
 
@@ -342,6 +349,7 @@ ul {
 
   footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 350px;
