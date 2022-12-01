@@ -314,6 +314,11 @@ footer {
     margin-bottom: 50px;
   }
 
+  .card {
+    max-width: 100%;
+    overflow: visible;
+  }
+
   .card-container {
     width: 100%;
   }
